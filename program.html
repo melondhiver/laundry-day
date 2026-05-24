@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Programme de lavage</title>
+
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/program.css">
+</head>
+
+<body>
+  <section class="program">
+    <h2>Choisis ton programme</h2>
+
+    <div class="temps">
+      <button data-temp="20">20 degrés</button>
+      <button data-temp="30">30 degrés</button>
+      <button data-temp="40">40 degrés</button>
+    </div>
+
+    <div class="soap">
+      <button data-soap="liquide">Liquide</button>
+      <button data-soap="poudre">Poudre</button>
+    </div>
+
+    <div class="mode">
+      <button data-mode="delicat">Délicat</button>
+      <button data-mode="sport">Sport</button>
+    </div>
+
+    <div class="options">
+      <label><input type="checkbox" id="prewash"> Prélavage</label>
+      <label><input type="checkbox" id="softener"> Assouplissant</label>
+    </div>
+
+    <button id="washBtn">Lancer le lavage</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/program.js"></script>
+</body>
+</html>
